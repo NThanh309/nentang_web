@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+</head>
+<body>
+
+<!-- Khung ngoài bao toàn bộ form -->
+<table border="1" cellspacing="0" cellpadding="10" align="center">
+  <tr>
+    <td>
+      <form>
+
+        <!-- Basic Info -->
+        <b>Basic Info</b>
+        <hr>
+        <table>
+          <tr><td>Employee ID</td><td><input type="text" value="9" readonly></td></tr>
+          <tr><td>Last Name</td><td><input type="text" value="Dodsworth"></td></tr>
+          <tr><td>First Name</td><td><input type="text" value="Anne"></td></tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender"> Male<br>
+              <input type="radio" name="gender"> Female<br>
+              <input type="radio" name="gender"> XXX<br>
+              <input type="radio" name="gender"> ZZZ<br>
+            </td>
+          </tr>
+          <tr><td>Title</td><td><input type="text" value="Sales Representative"></td></tr>
+          <tr><td>Suffix</td><td><input type="text" value="Ms."></td></tr>
+          <tr><td>BirthDate</td><td><input type="datetime-local" value="1969-07-02T00:00"></td></tr>
+          <tr><td>HireDate</td><td><input type="datetime-local" value="1994-11-15T00:00"></td></tr>
+          <tr><td>SSN (if applicable)</td><td><input type="text"></td></tr>
+          <tr>
+            <td>Reports To</td>
+            <td>
+              <select>
+                <option>Buchanan</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Contact Info -->
+        <br><b>Contact Info</b>
+        <hr>
+        <table>
+          <tr><td>Email</td><td><input type="email" value="name@example.com"></td></tr>
+          <tr><td>Address</td><td><input type="text" value="7 Houndstooth Rd."></td></tr>
+          <tr><td>City</td><td><input type="text" value="London"></td></tr>
+          <tr><td>Region</td><td><input type="text"></td></tr>
+          <tr><td>Postal Code</td><td><input type="text" value="WG2 7LT"></td></tr>
+          <tr>
+            <td>Country</td>
+            <td>
+              <select>
+                <option>Russian Federation</option>
+              </select>
+            </td>
+          </tr>
+          <tr><td>US Home Phone</td><td><input type="text" value="(234)234-2342"></td></tr>
+          <tr><td>Photo</td><td><input type="text" value="EmplD9.bmp"></td></tr>
+        </table>
+
+        <!-- Optional Info -->
+        <br><b>Optional Info</b>
+        <hr>
+        <table>
+          <tr>
+            <td>Notes</td>
+            <td>
+              <!-- Khung bao toàn bộ Note -->
+              <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                  <td>
+                    <!-- Nút toolbar -->
+                    <button><b>B</b></button>
+                    <button><i>I</i></button>
+                    <button><u>U</u></button>
+                    <button>&#128438;</button>
+                    <button>&#10060;</button>
+                    <br>
+                    <!-- Vùng nhập liệu -->
+                    <textarea rows="5" cols="40">Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ</textarea>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>Preferred Shift</td>
+            <td>
+              <input type="checkbox" checked> Regular<br>
+              <input type="checkbox" checked> Gravy Yard<br>
+            </td>
+          </tr>
+          <tr>
+            <td>Active?</td>
+            <td><input type="checkbox" checked></td>
+          </tr>
+          <tr>
+            <td>Are you human?</td>
+            <td>
+              <font size="5"><pre style="margin:0;">TIDAWO</pre></font>
+              <div align="center"> Click to change</div>
+              <input type="text" style="width: 100%;">
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <hr>
+        <!-- Nút và *required -->
+        <table width="100%">
+          <tr>
+            <td align="left">
+              <button>&#9664;</button>
+              <button>&#9654;</button>
+            </td>
+            <td align="right">
+              <button><b>&#128190; Submit</b></button>
+              <button><b>&#10006; Cancel</b></button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="left"><i>* required</i></td>
+          </tr>
+        </table>
+
+      </form>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
